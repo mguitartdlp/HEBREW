@@ -18,4 +18,43 @@ Per LuaLatex.
 
 Aquest és un altre text en català.
 
+#exemple de taula català/hebreu centrada i amb títol al peu
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Hebreu} & \textbf{Català} \\
+\hline
+\selectlanguage{hebrew}הֶבֶל\selectlanguage{catalan} & Hebel \\
+\hline
+\selectlanguage{hebrew}שָׁבוּעַ\selectlanguage{catalan} & Sha-vu6t \\
+\hline
+\selectlanguage{hebrew}בָּחוּר\selectlanguage{catalan} & Bahur \\
+\hline
+\selectlanguage{hebrew}עוֹלָם\selectlanguage{catalan} & 'Olam \\
+\hline
+\selectlanguage{hebrew}יִתְרוֹן\selectlanguage{catalan} & Yitrón \\
+\hline
+\selectlanguage{hebrew}עָמָל\selectlanguage{catalan} & 'Amal \\
+\hline
+\end{tabular}
+\caption{Paraules en hebreu i el seu equivalent en català}
+\end{table}
+
+#Per escriure en hebreu en el mig del document (d'esquerra a dreta)
+\selectlanguage{hebrew}
+הֶבֶל % Hebel
+
+שָׁבוּעַ % Sha-vu6t
+
+בָּחוּר % Bahur
+
+עוֹלָם % 'Olam
+
+יִתְרוֹן % Yitrón
+
+עָמָל % 'Amal
+
+\selectlanguage{english}
+
 \end{document}
